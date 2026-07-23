@@ -16,13 +16,14 @@ function getRandomAlphabet(){
 
     const stringAlphabet="abcdefghijklmnopqrstuvwxyz";
     const AlphabetArray=stringAlphabet.split('');
-
+console.log(AlphabetArray);
     // get random index generate
     const randomNumberGenerate=Math.random()* 25 // alphabet 25 so generate 0 to 25 ,random(0-1)
 
     const indexAraryGenerate=Math.round(randomNumberGenerate); // round mane puron number
 
     const alphabet=AlphabetArray[indexAraryGenerate];
-
+    console.log(alphabet);
     return alphabet;
+    
 }

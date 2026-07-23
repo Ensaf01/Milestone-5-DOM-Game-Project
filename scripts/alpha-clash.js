@@ -14,10 +14,17 @@
 
 function continueGame(){
     // step -1 -> generate random alphabet
-    const Alphabet=getRandomAlphabet();
+    const alphabet=getRandomAlphabet();
+    console.log(alphabet);
+
+    // show alphabet in display
+
+    const currentAlphabetElement=document.getElementById('current-alphabet');
+    currentAlphabetElement.innerText=alphabet;
 }
 function play(){
    HiddenElementID('home-screen'); 
    showelementId('play-screen');
+   continueGame();
 }
 
