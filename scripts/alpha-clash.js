@@ -12,7 +12,12 @@
 
 // utility moddhe showelementId and hiddenElementID function ache 
 
+function continueGame(){
+    // step -1 -> generate random alphabet
+    const Alphabet=getRandomAlphabet();
+}
 function play(){
    HiddenElementID('home-screen'); 
    showelementId('play-screen');
 }
+

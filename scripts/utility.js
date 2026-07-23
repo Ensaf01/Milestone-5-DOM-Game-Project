@@ -10,3 +10,19 @@ function showelementId(elementId){
     showPage.classList.remove('hidden'); // hidden class thakle seta remove hobe and ja chilo show korbe
 
 }
+
+function getRandomAlphabet(){
+    // create array direct or string to array via split
+
+    const stringAlphabet="abcdefghijklmnopqrstuvwxyz";
+    const AlphabetArray=stringAlphabet.split('');
+
+    // get random index generate
+    const randomNumberGenerate=Math.random()* 25 // alphabet 25 so generate 0 to 25 ,random(0-1)
+
+    const indexAraryGenerate=Math.round(randomNumberGenerate); // round mane puron number
+
+    const alphabet=AlphabetArray[indexAraryGenerate];
+
+    return alphabet;
+}
