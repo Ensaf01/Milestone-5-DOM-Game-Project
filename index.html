@@ -18,7 +18,8 @@
     <main class="bg-[#010313] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center">
 
         <!-- min-h-screen for this section full screen and middle er jonno justify center item center -->
-        <section class="hidden home min-h-screen text-white flex justify-center items-center">
+
+        <section class=" home min-h-screen text-white flex justify-center items-center">
             <div class="flex flex-col gap-3 items-center ">
                 <h1 class="text-8xl font-bold">ALPHABET CLASH</h1>
                 <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
@@ -29,7 +30,7 @@
 
         </section>
 
-        <section class="play-ground flex flex-col justify-center items-center ">
+        <section class=" hidden play-ground flex flex-col justify-center items-center ">
             <div class="mt-10">
                 <!-- screen artboard -->
                 <div class="artboard artboard-horizontal phone-6 bg-[#FFFFFFB3] border-[20px] border-[#010313CC] rounded-2xl">
@@ -83,7 +84,7 @@
                 <!-- life score -->
                 <div class="mt-10 flex space-x-96 gap-96">
                     <div>
-                        <button class="btn bg-[#894189]"> Life
+                        <button class="btn text-white bg-[#894189]"> Life
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -94,7 +95,7 @@
                         </button>
                     </div>
                     <div>
-                        <button class="btn bg-[#360490]">Score
+                        <button class="btn text-white bg-[#360490]">Score
                             <span>1</span>
                         </button>
                     </div>
@@ -104,7 +105,18 @@
             </div>
 
         </section>
-        <section class="score">
+
+
+        <section class="hidden score flex justify-center items-center min-h-screen">
+            <div class="text-white text-center space-y-4 bg-[#FFFFFF33] p-4 rounded-lg">
+                <h1 class="text-8xl">
+                    <span class="font-extrabold">Score:</span>
+                    <span>14</span>
+                </h1>
+                <button class="btn">Play Again</button>
+                <p>Practice will make you Pro</p>
+
+            </div>
 
         </section>
     </main>
