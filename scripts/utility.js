@@ -11,19 +11,25 @@ function showelementId(elementId){
 
 }
 
+function setBackGroundColorById(elementId){
+    const element=document.getElementById(elementId);
+    element.classList.add('bg-red-400'); //bg-orange-400 class
+
+}
+
 function getRandomAlphabet(){
     // create array direct or string to array via split
 
     const stringAlphabet="abcdefghijklmnopqrstuvwxyz";
     const AlphabetArray=stringAlphabet.split('');
-console.log(AlphabetArray);
+    //console.log(AlphabetArray);
     // get random index generate
     const randomNumberGenerate=Math.random()* 25 // alphabet 25 so generate 0 to 25 ,random(0-1)
 
     const indexAraryGenerate=Math.round(randomNumberGenerate); // round mane puron number
 
     const alphabet=AlphabetArray[indexAraryGenerate];
-    console.log(alphabet);
+   // console.log(alphabet);
     return alphabet;
     
 }
